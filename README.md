@@ -51,17 +51,18 @@ Dashmix Theme - https://demo.pixelcave.com/dashmix/
                 sf_guard_plugin:
                     signin_form: gsDashmixFormSignin
                 gs_dashmix_plugin:
-                    url: 'https://myurl.com'
-                    project_title: 'Your project title'
+                    url: 'https://sgc.lubrirod.co'
+                    project_title: 'Sistema de Gestión de Convenios'
                     theme_files: '/assets/'
                     
-                    icon_shortcut_icon: '/assets/favicon.png'
-                    icon_icon: '/assets/favicon-192x192.png'
-                    icon_apple_touch_icon: '/assets/apple-touch-icon-180x180.png'
+                    icon_shortcut_icon: '/public/favicon.png'
+                    icon_icon: '/public/favicon-192x192.png'
+                    icon_apple_touch_icon: '/public/apple-touch-icon-180x180.png'
                     
-                    login_title: 'Authentication'
-                    login_background_image: '/public/media/photos/photo14.jpg'
-                    login_logo: '/public/logo.png'
+                    login_background_image: '/assets/media/photos/photo20.jpg'
+                    login_logo: '/public/logo-lubrirod.png'
+
+                    auth_logo: '/public/logo-auth.png'
 
   * Clear you cache
 
