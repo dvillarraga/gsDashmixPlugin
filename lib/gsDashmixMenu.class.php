@@ -213,7 +213,11 @@ class gsDashmixMenu extends gsDashmixMenuComponent
       <div class="content-header bg-white-10">
           <!-- Logo -->
           <div style="margin-left:auto;margin-right:auto;">
-              <a href="<?php echo url_for('home/index')?>"><img src="/assets/logo-auth.png" style="max-width: 200px;"></a>
+              <a href="<?php echo url_for('home/index')?>"><img src="
+EOF;
+        $str .= sfConfig::get('app_gs_dashmix_plugin_auth_logo', '/public/logo-auth.png');
+        $str .= <<<EOF
+        " style="max-width: 200px;"></a>
           </div>
           <!-- END Logo -->
       </div>
