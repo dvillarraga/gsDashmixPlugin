@@ -1,0 +1,16 @@
+{
+    "name": "dvillarraga/symfony1-dashmix-plugin",
+    "type": "symfony1-plugin",
+    "description": "A better way to implement Dashmix Theme on a Symfony Project",
+    "homepage": "https://github.com/dvillarraga/symfony1-dashmix-plugin",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Oscar Villarraga",
+            "email": "dvillarraga@gmail.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
