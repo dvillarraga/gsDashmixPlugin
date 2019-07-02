@@ -1,7 +1,7 @@
 <?php use_helper('I18N') ?>
 
 <!-- Page Content -->
-<div class="bg-image" style="background-image: url('/assets/back-ground-01.jpg');">
+<div class="bg-image" style="background-image: url('<?php echo sfConfig::get('app_gs_dashmix_plugin_login_background_image', '/assets/media/photos/photo14.jpg'); ?>');">
     <div class="row no-gutters bg-primary-op">
         <!-- Main Section -->
         <div class="hero-static col-md-6 d-flex align-items-center bg-white">
