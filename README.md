@@ -11,7 +11,7 @@ Dashmix Theme - https://demo.pixelcave.com/dashmix/
 
   * Install the plugin (via composer)
 
-        composer require dvillarraga/gs-dashmix-plugin
+        composer require dvillarraga/symfony1-dashmix-plugin
 
   * Activate the plugin in the `config/ProjectConfiguration.class.php`
 

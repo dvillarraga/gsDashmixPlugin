@@ -10,6 +10,9 @@
             "email": "dvillarraga@gmail.com"
         }
     ],
+    "extra": {
+        "installer-name": "gsDashmixPlugin"
+    },
     "require": {
         "composer/installers": "~1.0"
     }
