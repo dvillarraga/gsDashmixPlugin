@@ -31,7 +31,7 @@
         <div class="hero-static col-md-6 d-none d-md-flex align-items-md-center justify-content-md-center text-md-center">
             <div class="p-3">
                 <p class="display-4 font-w700 text-white mb-4">
-                    Sistema de Gestion de Contratos
+                    <?php echo sfConfig::get('app_gs_dashmix_plugin_project_title', 'Project Title'); ?>
                 </p>
                 <p class="font-size-lg font-w600 text-white-75 mb-0">
                     Copyright &copy; <span class="js-year-copy"><?php echo date("Y"); ?></span>
