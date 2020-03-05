@@ -32,11 +32,11 @@ class gsDashmixMenu extends gsDashmixMenuComponent
   }
   
   /**
-	 * Create an instance of gsDashmixMenu from a yaml file.
-	 * 
-	 * @param string $yaml_file The yaml file path
-	 * @return gsDashmixMenu
-	 */
+   * Create an instance of gsDashmixMenu from a yaml file.
+   * 
+   * @param string $yaml_file The yaml file path
+   * @return gsDashmixMenu
+   */
   public static function createFromYaml($yaml_file)
   {
     $yaml = sfYaml::load($yaml_file);
@@ -56,11 +56,11 @@ class gsDashmixMenu extends gsDashmixMenuComponent
   }
   
   /**
-	 * Create a submenu from an array.
-	 * 
-	 * @param array $arr The array
-	 * @return gsDashmixMenuComponent
-	 */
+   * Create a submenu from an array.
+   * 
+   * @param array $arr The array
+   * @return gsDashmixMenuComponent
+   */
   protected static function createMenu($arr)
   {
     $item = null;
@@ -85,21 +85,21 @@ class gsDashmixMenu extends gsDashmixMenuComponent
   }
   
   /**
-	 * Get the children attribute value.
-	 * 
-	 * @return array
-	 */
+   * Get the children attribute value.
+   * 
+   * @return array
+   */
   public function getChildren()
   {
     return $this->children;
   }
   
   /**
-	 * Get a child.
-	 *
-	 * @param string $name The child name
-	 * @return mixed
-	 */
+   * Get a child.
+   *
+   * @param string $name The child name
+   * @return mixed
+   */
   public function getChild($name)
   {
     $child = null;
@@ -113,12 +113,12 @@ class gsDashmixMenu extends gsDashmixMenuComponent
   }
 
   /**
-	 * Adds a child.
-	 *
-	 * @param string $name The child name
-	 * @param gsDashmixMenuComponent $component The child
-	 * @return gsDashmixMenu The current object (for fluent API support)
-	 */
+   * Adds a child.
+   *
+   * @param string $name The child name
+   * @param gsDashmixMenuComponent $component The child
+   * @return gsDashmixMenu The current object (for fluent API support)
+   */
   public function addChild($name, gsDashmixMenuComponent $component)
   {
     $this->children[$name] = $component;
@@ -127,11 +127,11 @@ class gsDashmixMenu extends gsDashmixMenuComponent
   }
   
   /**
-	 * Removes a child.
-	 *
-	 * @param string $name The child name
-	 * @return gsDashmixMenu The current object (for fluent API support)
-	 */
+   * Removes a child.
+   *
+   * @param string $name The child name
+   * @return gsDashmixMenu The current object (for fluent API support)
+   */
   public function removeChild($name)
   {
     unset($this->children[$name]);
@@ -140,10 +140,10 @@ class gsDashmixMenu extends gsDashmixMenuComponent
   }
 
   /**
-	 * Set the current object as the root.
-	 * 
-	 * @return gsDashmixMenu The current object (for fluent API support)
-	 */
+   * Set the current object as the root.
+   * 
+   * @return gsDashmixMenu The current object (for fluent API support)
+   */
   public function setRoot()
   {
     $this->is_root = true;
@@ -152,10 +152,10 @@ class gsDashmixMenu extends gsDashmixMenuComponent
   }
   
   /**
-	 * Unset the current object as the root.
-	 * 
-	 * @return gsDashmixMenu (for fluent API support)
-	 */
+   * Unset the current object as the root.
+   * 
+   * @return gsDashmixMenu (for fluent API support)
+   */
   public function unsetRoot()
   {
     $this->is_root = false;
@@ -164,10 +164,10 @@ class gsDashmixMenu extends gsDashmixMenuComponent
   }
   
   /**
-	 * Returns if the current object is the root.
-	 * 
-	 * @return boolean
-	 */
+   * Returns if the current object is the root.
+   * 
+   * @return boolean
+   */
   public function isRoot()
   {
     return $this->is_root;
@@ -213,8 +213,9 @@ class gsDashmixMenu extends gsDashmixMenuComponent
       <div class="content-header bg-white-10">
           <!-- Logo -->
           <div style="margin-left:auto;margin-right:auto;">
-              <a href="<?php echo url_for('home/index')?>"><img src="
 EOF;
+        $str .= '<a href="' . url_for('home/index') .'"><img src="';
+
         $str .= sfConfig::get('app_gs_dashmix_plugin_auth_logo', '/public/logo-auth.png');
         $str .= <<<EOF
         " style="max-width: 200px;"></a>
