@@ -2,10 +2,11 @@
   <table>
     <tbody>
       <form class="js-validation-signin" action="<?php echo url_for('gsDashmixAuth/signin') ?>" method="POST">
-        <?php echo $form->renderGlobalErrors() ?>
+      <div class="alert alert-danger text-center" style="<?php if(!$form->renderGlobalErrors()) echo 'display:none;' ?>" role="alert"><?php echo $form->renderGlobalErrors() ?></div>
         <?php echo $form->renderHiddenFields() ?>
         <div class="py-3">
           <div class="form-group">
+            <div class="alert alert-danger" style="<?php if(!$form['username']->renderError()) echo 'display:none;' ?>" role="alert"><?php echo $form['username']->renderError() ?></div>
             <?php echo $form['username'] ?>
           </div>
           <div class="form-group">
