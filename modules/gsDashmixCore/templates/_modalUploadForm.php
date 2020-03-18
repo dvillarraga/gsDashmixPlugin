@@ -36,7 +36,7 @@
                             <input type="file" class="ml-auto mr-auto" id="f_file" name="f_file" require>
                         </div>
                         <div class="row">
-                            <input type="submit" class="btn btn-primary ml-auto mr-auto" value="Registrar Nuevo Servicio">
+                            <input type="submit" class="btn btn-primary ml-auto mr-auto" value="Cargar">
                         </div>
                     </form>
                 </div>
