@@ -221,6 +221,11 @@ EOF;
         " style="max-width: 200px;"></a>
           </div>
           <!-- END Logo -->
+          <div>                
+                <a class="d-lg-none ml-2" data-toggle="layout" data-action="sidebar_close" href="javascript:void(0)">
+                    <i class="fa fa-times-circle"></i>
+                </a>
+            </div>
       </div>
   </div>
   <!-- END Side Header -->
