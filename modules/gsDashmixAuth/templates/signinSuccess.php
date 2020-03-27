@@ -8,7 +8,7 @@
             <div class="p-3 w-100">
                 <!-- Header -->
                 <div class="mb-3 text-center">
-                    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    <a class="navbar-brand js-scroll-trigger" href="<?php echo url_for('@homepage') ?>">
                         <img src="<?php echo sfConfig::get('app_gs_dashmix_plugin_login_logo', '/assets/media/favicons/favicon-192x192.png'); ?>" style="max-width: 300px;"></a>
                     <p class="text-uppercase font-w700 font-size-sm text-muted">Login</p>
                 </div>
