@@ -13,6 +13,10 @@ require_once(dirname(__FILE__).'/../../../../sfDoctrineGuardPlugin/modules/sfGua
 
 class gsDashmixAuthActions extends sfGuardAuthActions
 {
+    public function preExecute(){
+        $this->setLayout(sfConfig::get('app_gs_dashmix_plugin_login_layout', 'dashmix_public'));
+        parent::preExecute();
+    }
     public function executeSecure($request)
     {
         $this->getUser()->signOut();
