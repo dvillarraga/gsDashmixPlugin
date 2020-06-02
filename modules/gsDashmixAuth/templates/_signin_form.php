@@ -1,5 +1,5 @@
 <?php use_helper('I18N') ?>
-  <table>
+  <table style="width: 100%">
     <tbody>
       <form class="js-validation-signin" action="<?php echo url_for('gsDashmixAuth/signin') ?>" method="POST">
       <div class="alert alert-danger text-center" style="<?php if(!$form->renderGlobalErrors()) echo 'display:none;' ?>" role="alert"><?php echo $form->renderGlobalErrors() ?></div>
@@ -30,13 +30,14 @@
     </tbody>
     <tfoot>
       <tr>
-        <td colspan="2">
+        <td>
           <?php if ($sf_context->getRouting()->hasRouteName('sf_guard_forgot_password')) : ?>
             <a href="<?php echo url_for('@sf_guard_forgot_password') ?>"><?php echo __('Forgot your password?', null, 'sf_guard') ?></a>
           <?php endif; ?>
-
+        </td>
+        <td style="text-align:right;">
           <?php if ($sf_context->getRouting()->hasRouteName('sf_guard_register')) : ?>
-            &nbsp; <a href="<?php echo url_for('@sf_guard_register') ?>"><?php echo __('Want to register?', null, 'sf_guard') ?></a>
+            <a href="<?php echo url_for('@sf_guard_register') ?>"><?php echo __('Want to register?', null, 'sf_guard') ?></a>
           <?php endif; ?>
         </td>
       </tr>
